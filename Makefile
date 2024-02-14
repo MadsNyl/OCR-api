@@ -5,13 +5,13 @@ build:
 
 
 run:
-	docker run -d --name ocr-container -p 8080:8080 ocr-api
+	docker run -d --name ocr -p 8001:8001 ocr-api
 
 
 stop:
-	docker stop ocr-container
+	docker stop ocr
 
 
 clean:
-	docker rm ocr-container
+	docker rm ocr
 	docker rmi ocr-api
