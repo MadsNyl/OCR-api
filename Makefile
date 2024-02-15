@@ -10,6 +10,7 @@ run:
 
 stop:
 	docker stop ocr
+	docker rm ocr
 
 
 clean:
